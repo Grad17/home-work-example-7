@@ -4,16 +4,14 @@ public class Main {
         String firstName = ("Ivan");
         String middleName = ("Ivanovich");
         String lastName = ("Ivanov");
-        String fullName = ("Ivanov Ivan Ivanovich");
+        String fullName = lastName + " " + firstName + " " + middleName;
         System.out.println("ФИО сотрудника - " + fullName);
 
-        String fullNameToUpperCase = fullName.toUpperCase();
-        System.out.println("Данные ФИО сотрудника для заполнения отчета — " + fullNameToUpperCase);
+        System.out.println("Данные ФИО сотрудника для заполнения отчета — " + fullName.toUpperCase());
 
         String fullName2 = fullName.replace("Ivanov Ivan Ivanovich","Иванов Семён Семёнович");
         if (fullName2.contains("ё")) {
-            String e = fullName2.replace('ё', 'е');
-            System.out.println("Данные ФИО сотрудника (исправлены) — " + e);
+            System.out.println("Данные ФИО сотрудника (исправлены) — " + fullName2.replace('ё', 'е'));
         } else System.out.println("Данные ФИО сотрудника — " + fullName2);
 
 
